@@ -1,101 +1,121 @@
-import Image from "next/image";
+import Link from "next/link";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div id="main-page">
+      <Header />
+      <div className="main">
+        <img src="mainimage.png" id="mainimage"></img>
+        <h1>PROJECT</h1>
+        <span>Lorum</span>
+        <div className="frames">
+          <div className="frame1">
+            <img src="arrow-2-right-long (2).svg" alt="" className="ar1" />
+          </div>
+          <div className="frame2">
+            <img src="arrow-2-right-long (2).svg" alt="" className="ar2" />
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="date">
+          <p>
+            0 / 02<br></br>1
+          </p>
+        </div>
+        <div className="box">
+          <p className="box-text">
+            <Link href={"#project"}>View Project</Link>
+          </p>
+          <img src="arrow-2-right-long.svg" className="box-arrow"></img>
+        </div>
+      </div>
+
+      <div className="about-imgage">
+        <img src="Rectangle 8.png" alt="" className="img-1" />
+        <img src="Rectangle 9.png" alt="" className="img-2" />
+        <img src="Rectangle 10.png" alt="" className="img-3" />
+      </div>
+      <div id="about-text">
+        <h2>About</h2>
+        <p className="about-para">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged.
+        </p>
+        <button>
+          <div className="box2">
+            <p className="box2-text">Read More</p>
+            <img src="arrow-2-right-long.svg" className="box2-arrow"></img>
+          </div>
+        </button>
+        <h3 className="mission">Main Focus/Mission Statement</h3>
+        <h4 className="head1">1</h4>
+        <p className="missionpara1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          efficitur, lectus et facilisis placerat.
+        </p>
+        <h4 className="head2">2</h4>
+        <p className="missionpara2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          efficitur, lectus et facilisis placerat, magna mauris porttitor
+          tortor, a auctor est felis ut nisl.
+        </p>
+
+        <h4 className="projects" id="project">
+          Our Projects
+        </h4>
+        <div className="project-image">
+          <img src="Rectangle 12.png" alt="" className="project-image1" />
+          <div className="project-image1-rectangle"></div>
+          <p className="project-text">Sample Project</p>
+          <button>
+            <p className="project-text-2">View More</p>
+            <img src="arrow-2-right-long.png" className="project-arrow" />
+          </button>
+          <img src="image 15.png" alt="" className="project-image2" />
+          <img src="image 16.png" alt="" className="project-image3" />
+          <img src="image 17.png" alt="" className="project-image4" />
+          <img src="image 18.png" alt="" className="project-image5" />
+        </div>
+        <button>
+          <div className="project-box">
+            <p className="pr-text">All Projects</p>
+            <img src="arrow-2-right-long.png" className="project-arrow2" />
+          </div>
+        </button>
+      </div>
+
+      <h4 className="contact-heading">Contact Us</h4>
+      <img src="image 12.png" alt="" className="contact-img" />
+      <form action="" method="post" className="contact">
+        <input type="text" className="name" placeholder="Name" />
+        <input
+          type="tel"
+          className="number"
+          placeholder="Phone Number"
+          required
+        />
+        <input type="email" className="email" placeholder="E-mail" required />
+        <input type="text" className="interested" placeholder="Interested In" />
+        <textarea
+          className="message"
+          placeholder="Message"
+          rows={6}
+          cols={6}
+          required
+        />
+        <button type="submit">
+          <div className="project-box contact-btn">
+            <p className="pr-text">Send Email</p>
+            <img src="arrow-2-right-long.png" className="project-arrow2" />
+          </div>
+        </button>
+      </form>
+      <Footer />
     </div>
   );
 }
